@@ -72,7 +72,7 @@ class DataStore(object):
         if not name in self.store.keys():
             raise NotFoundInDataStore()
 
-        return self.store[name][0]
+        return self.store[name][1]
 
     def clear(self, lifetime):
         """
